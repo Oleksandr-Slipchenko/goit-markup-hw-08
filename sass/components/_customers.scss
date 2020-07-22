@@ -1,0 +1,76 @@
+/* customers */
+
+.customers {
+	padding-top: 94px;
+	padding-bottom: 94px;
+
+	@media screen and (max-width: $mobile-upper) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	&-list {
+		@extend %list;
+		// display: flex;
+
+		@media screen and (max-width: $mobile-upper) {
+			display: flex;
+			flex-wrap: wrap;
+			margin: -15px;
+		}
+	}
+
+	&-title {
+		margin-top: 0px;
+		margin-bottom: 50px;
+		text-align: center;
+
+		@include font(700, 36px, 1.16, 0.03em);
+
+		@media screen and (max-width: $mobile-upper) {
+			@include font(700, 28px, 1.17, 0.03em);
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.customers-list .item {
+	// margin-right: 30px;
+	// width: calc((100% - 150px) / 6);
+
+	@media screen and (max-width: $mobile-upper) {
+		width: calc((100% - 4 * 15px) / 2);
+		margin: 15px;
+	}
+
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+
+.customers-list .link {
+	width: 100%;
+	height: 90px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	fill: $color-social-link;
+	border: 1px solid #afb1b8;
+	box-sizing: border-box;
+	border-radius: 4px;
+
+	transition: border-color 250ms $timing-transition, fill 250ms $timing-transition;
+
+	@media screen and (max-width: $mobile-upper) {
+		width: 100%;
+		height: 90px;
+	}
+
+	&:hover,
+	& :focus {
+		border-color: $text-color-hover;
+		fill: $text-color-hover;
+	}
+}

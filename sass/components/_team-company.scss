@@ -1,0 +1,123 @@
+/* the team of company */
+
+.section-team {
+	padding-top: 94px;
+	padding-bottom: 94px;
+
+	background-color: #f5f4fa;
+
+	@media screen and (max-width: $mobile-upper) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	& img {
+		@extend %image;
+		width: 100%;
+	}
+
+	& .title {
+		margin-bottom: 50px;
+		text-align: center;
+
+		@include font(700, 36px, 1.16, 0.03em);
+
+		@media screen and (max-width: $mobile-upper) {
+			@include font(700, 28px, 1.17, 0.03em);
+			margin-bottom: 30px;
+		}
+	}
+	& .person {
+		padding-top: 0px;
+		margin-top: 0px;
+		margin-bottom: 10px;
+
+		@include font(500, 16px, 1.18, 0.03em);
+
+		text-align: center;
+	}
+}
+
+.team {
+	@extend %list;
+	// display: flex;
+}
+
+.team .item {
+	// margin-right: 30px;
+	// width: calc((100% - 90px) / 4);
+
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+	border-radius: 0px 0px 4px 4px;
+	overflow: hidden;
+
+	@media screen and (max-width: $mobile-upper) {
+		margin-bottom: 30px;
+	}
+
+	&:last-child {
+		margin-right: 0;
+
+		@media screen and (max-width: $mobile-upper) {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.block-person {
+	padding-top: 30px;
+	padding-bottom: 24px;
+	padding-left: 32px;
+	padding-right: 32px;
+
+	background: $accent-color;
+}
+
+.section-profession {
+	margin-top: 0px;
+	margin-bottom: 16px;
+
+	@include font(400, 16px, 1.18, 0.03em);
+
+	text-align: center;
+}
+
+.social-list {
+	@extend %list;
+	display: flex;
+
+	@media screen and (max-width: $mobile-upper) {
+		justify-content: center;
+	}
+}
+.social-list .social-item {
+	margin-right: 10px;
+	// width: calc((100% - 30px) / 4);
+
+	@media screen and (max-width: $mobile-upper) {
+	}
+
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+
+.social-item .link {
+	width: 44px;
+	height: 44px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+
+	fill: $color-social-link;
+	transition: background-color 250ms $timing-transition, fill 250ms $timing-transition;
+
+	&:hover,
+	&:focus {
+		background-color: $text-color-hover;
+		fill: $accent-color;
+		border-radius: 50%;
+	}
+}

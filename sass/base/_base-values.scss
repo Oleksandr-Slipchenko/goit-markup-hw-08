@@ -1,0 +1,35 @@
+/* base-values */
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+// html {
+// 	margin-left: auto;
+// 	margin-right: auto;
+
+// 	max-width: 100%;
+
+// 	box-sizing: border-box;
+// }
+body {
+	padding-top: 79px;
+
+	background-color: $accent-color;
+	color: $primary-text-color;
+	font-family: $main-font;
+	letter-spacing: $font-letter-spacing;
+
+	@media screen and (max-width: $mobile-upper) {
+		padding-top: 60px;
+	}
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+}

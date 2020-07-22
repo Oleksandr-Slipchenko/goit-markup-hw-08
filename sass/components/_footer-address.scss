@@ -1,0 +1,48 @@
+/* address */
+
+.address {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	// width: calc((100% - 60px) / 4);
+
+	@media screen and (max-width: $mobile-upper) {
+		padding-top: 0px;
+		padding-bottom: 60px;
+	}
+
+	&-map {
+		display: flex;
+		margin-top: 20px;
+
+		@include font();
+
+		color: $accent-color;
+		font-style: normal;
+		flex-direction: column;
+	}
+}
+.address-map-list {
+	@extend %list;
+}
+
+.address-map .item {
+	margin-bottom: 9px;
+
+	@media screen and (max-width: $mobile-upper) {
+		margin-bottom: 8px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.address-map .link {
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $text-color-hover;
+	}
+}

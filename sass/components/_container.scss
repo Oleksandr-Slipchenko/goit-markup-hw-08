@@ -1,0 +1,18 @@
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	// width: 100%;
+	// max-width: 1200px;
+
+	@media screen and (min-width: $mobile-upper) {
+		width: $mobile-upper;
+	}
+	@media screen and (min-width: $tablet-upper) {
+		width: $tablet-upper;
+	}
+	@media screen and (min-width: $desktop-upper) {
+		width: $desktop-upper;
+	}
+}
