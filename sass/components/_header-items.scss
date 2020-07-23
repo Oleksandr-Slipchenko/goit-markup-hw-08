@@ -9,6 +9,7 @@
 	@media screen and (max-width: $tablet-upper) {
 		padding: 16px 0px;
 		justify-content: space-between;
+		@include font(500, 18px, 1.16, 0.02em);
 	}
 }
 .nav-contacts {
