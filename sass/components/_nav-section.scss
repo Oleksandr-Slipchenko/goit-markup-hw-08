@@ -58,3 +58,20 @@
 		color: $text-color-hover;
 	}
 }
+.menu-button {
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+
+	& .icon-close-burger {
+		display: none;
+	}
+	&.is-open .icon-close-burger {
+		display: block;
+	}
+	&.is-open .icon-burger {
+		display: none;
+	}
+}

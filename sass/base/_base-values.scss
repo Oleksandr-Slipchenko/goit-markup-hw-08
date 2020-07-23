@@ -24,6 +24,9 @@ body {
 	@media screen and (max-width: $mobile-upper) {
 		padding-top: 60px;
 	}
+	&.modal-open {
+		overflow: hidden;
+	}
 }
 
 h1,
