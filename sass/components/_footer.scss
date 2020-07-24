@@ -3,7 +3,7 @@
 .footer {
 	background-color: #2f303a;
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		padding-top: 60px;
 		padding-bottom: 60px;
 		text-align: center;
@@ -13,5 +13,11 @@
 		// display: flex;
 		align-items: baseline;
 		justify-content: space-between;
+	}
+}
+.address-join-in {
+	@media screen and (min-width: $tablet-upper) {
+		display: flex;
+		margin-bottom: 60px;
 	}
 }

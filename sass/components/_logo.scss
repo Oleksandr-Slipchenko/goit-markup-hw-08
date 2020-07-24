@@ -10,7 +10,7 @@
 		color: $accent-color;
 	}
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		@include font(700, 24px, 1.16, 0.03em);
 	}
 }

@@ -5,9 +5,12 @@
 	padding-bottom: 60px;
 	// width: calc((100% - 60px) / 4);
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		padding-top: 0px;
-		padding-bottom: 60px;
+	}
+	@media screen and (min-width: $tablet-upper) {
+		width: 50%;
+		padding: 0;
 	}
 
 	&-map {
@@ -28,7 +31,7 @@
 .address-map .item {
 	margin-bottom: 9px;
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		margin-bottom: 8px;
 	}
 

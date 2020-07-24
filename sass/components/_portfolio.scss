@@ -4,7 +4,7 @@
 	padding-top: 94px;
 	padding-bottom: 94px;
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
@@ -12,29 +12,37 @@
 
 .filter {
 	@extend %list;
-	// display: flex;
-	// justify-content: center;
 	margin-bottom: 50px;
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: 40px;
+
+		& .item:not(:nth-last-child(-2n + 3)) {
+			margin-right: 8px;
+		}
+	}
+	@media screen and (min-width: $tablet-upper) {
+		display: flex;
+		margin-bottom: 30px;
+		justify-content: center;
 	}
 
-	& .item:not(:nth-last-child(-2n + 3)) {
+	& .item:not(:last-child) {
 		margin-right: 8px;
 	}
 
-	// & .item:not(:last-child) {
-	// 	margin-right: 8px;
-	// }
-
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		& .item {
 			margin-bottom: 15px;
 		}
 		& .item:nth-last-child(-n + 2) {
+			margin-bottom: 0;
+		}
+	}
+	@media screen and (min-width: $tablet-upper) {
+		& .item {
 			margin-bottom: 0;
 		}
 	}
@@ -63,8 +71,10 @@
 
 .card {
 	@extend %list;
-	// display: flex;
-	// flex-wrap: wrap;
+	@media screen and (min-width: $tablet-upper) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
 	& img {
 		@extend %image;
@@ -72,19 +82,12 @@
 	}
 
 	&-content {
-		padding-top: 20px;
-		padding-right: 24px;
-		padding-bottom: 20px;
-		padding-left: 24px;
+		padding: 20px 24px;
 
 		background: $accent-color;
 		border: 1px solid #eeeeee;
 		border-top: none;
 		box-sizing: border-box;
-
-		@media screen and (max-width: $mobile-upper) {
-			padding: 20px 24px;
-		}
 	}
 	&-heading {
 		margin-bottom: 4px;
@@ -93,6 +96,10 @@
 		font-size: 18px;
 		line-height: 2;
 		letter-spacing: 0.06em;
+
+		white-space: nowrap; /* Запрещаем перенос строк */
+		overflow: hidden; /* Обрезаем все, что не помещается в область */
+		text-overflow: ellipsis; /* Добавляем многоточие */
 	}
 	&-caption {
 		margin-top: 0px;
@@ -103,12 +110,24 @@
 	}
 }
 .card .item {
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		margin-bottom: 30px;
 	}
 	&:last-child {
-		@media screen and (max-width: $mobile-upper) {
+		@media screen and (min-width: $mobile-upper) {
 			margin-bottom: 0px;
+		}
+	}
+	@media screen and (min-width: $tablet-upper) {
+		width: calc((100% - 30px) / 2);
+		margin-right: 30px;
+		margin-bottom: 30px;
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+		&:last-child {
+			margin-right: 0;
 		}
 	}
 
@@ -116,7 +135,7 @@
 	// margin-bottom: 30px;
 
 	// width: calc((100% - 60px) / 3);
-	box-sizing: border-box;
+	// box-sizing: border-box;
 
 	// 	&:nth-child(3n) {
 	// 		margin-right: 0px;
@@ -128,7 +147,7 @@
 
 .card .link {
 	width: 100%;
-	height: 404px;
+	height: 100%;
 
 	display: block;
 	text-decoration: none;

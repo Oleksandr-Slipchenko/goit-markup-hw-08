@@ -6,7 +6,7 @@
 
 	background-color: #f5f4fa;
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
@@ -22,7 +22,7 @@
 
 		@include font(700, 36px, 1.16, 0.03em);
 
-		@media screen and (max-width: $mobile-upper) {
+		@media screen and (min-width: $mobile-upper) {
 			@include font(700, 28px, 1.17, 0.03em);
 			margin-bottom: 30px;
 		}
@@ -40,7 +40,11 @@
 
 .team {
 	@extend %list;
-	// display: flex;
+
+	@media screen and (min-width: $tablet-upper) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 .team .item {
@@ -51,24 +55,34 @@
 	border-radius: 0px 0px 4px 4px;
 	overflow: hidden;
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		margin-bottom: 30px;
-	}
-
-	&:last-child {
-		margin-right: 0;
-
-		@media screen and (max-width: $mobile-upper) {
-			margin-bottom: 0px;
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
+	@media screen and (min-width: $tablet-upper) {
+		width: calc((100% - 30px) / 2);
+		margin-right: 30px;
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+		&:nth-last-child(-n + 2) {
+			margin-bottom: 0;
+		}
+	}
+
+	// &:last-child {
+	// 	margin-right: 0;
+	// }
 }
 
 .block-person {
 	padding-top: 30px;
+	padding-right: 32px;
 	padding-bottom: 24px;
 	padding-left: 32px;
-	padding-right: 32px;
 
 	background: $accent-color;
 }
@@ -86,16 +100,13 @@
 	@extend %list;
 	display: flex;
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		justify-content: center;
 	}
 }
 .social-list .social-item {
 	margin-right: 10px;
 	// width: calc((100% - 30px) / 4);
-
-	@media screen and (max-width: $mobile-upper) {
-	}
 
 	&:last-child {
 		margin-right: 0px;

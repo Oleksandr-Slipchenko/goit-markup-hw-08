@@ -3,8 +3,12 @@
 .join-in {
 	// width: calc((100% - 60px) / 4);
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		margin-bottom: 60px;
+	}
+	@media screen and (min-width: $tablet-upper) {
+		width: 50%;
+		margin-bottom: 0;
 	}
 
 	& .title {
@@ -14,12 +18,12 @@
 
 		text-transform: uppercase;
 	}
-	&-list {
+	&-social {
 		@extend %list;
 		margin-top: 20px;
 		display: flex;
 
-		@media screen and (max-width: $mobile-upper) {
+		@media screen and (min-width: $mobile-upper) {
 			justify-content: center;
 		}
 	}

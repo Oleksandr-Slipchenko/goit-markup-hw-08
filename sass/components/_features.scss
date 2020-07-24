@@ -4,36 +4,53 @@
 	@extend %list;
 	padding-top: 94px;
 	padding-bottom: 94px;
-	// display: flex;
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
+	@media screen and (min-width: $tablet-upper) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
 	& .item {
-		@media screen and (max-width: $mobile-upper) {
-			margin-bottom: 30px;
-		}
-
 		// margin-right: 30px;
 		// width: calc((100% - 90px) / 4);
-	}
-	& .item:last-child {
-		margin-right: 0;
 
-		@media screen and (max-width: $mobile-upper) {
-			margin-bottom: 0px;
+		@media screen and (min-width: $mobile-upper) {
+			margin-bottom: 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		@media screen and (min-width: $tablet-upper) {
+			width: calc((100% - 30px) / 2);
+			margin-right: 30px;
+
+			&:nth-last-child(2) {
+				margin-bottom: 0;
+			}
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
 		}
 	}
+	// & .item:last-child {
+	// 	margin-right: 0;
+	// }
 	&-title {
 		margin-bottom: 10px;
 
 		@include font($fw: 700, $lh: 1.14);
 		text-transform: uppercase;
 
-		@media screen and (max-width: $mobile-upper) {
+		@media screen and (min-width: $mobile-upper) {
 			text-align: center;
+		}
+		@media screen and (min-width: $tablet-upper) {
+			text-align: initial;
 		}
 	}
 	&-text {

@@ -11,7 +11,7 @@
 	color: $accent-color;
 	background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero.jpg);
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		padding-top: 118px;
 		padding-bottom: 118px;
 	}
@@ -24,7 +24,7 @@
 
 		text-transform: uppercase;
 
-		@media screen and (max-width: $mobile-upper) {
+		@media screen and (min-width: $mobile-upper) {
 			@include font(900, 26px, 1.61, 0.06em);
 		}
 	}

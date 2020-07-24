@@ -5,6 +5,7 @@
 
 	&-list {
 		@extend %list;
+		display: inline-block;
 		// display: flex;
 	}
 	&-title {
@@ -35,9 +36,11 @@
 	color: rgba(255, 255, 255, 0.6);
 	transition: border-color 250ms $timing-transition;
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (min-width: $mobile-upper) {
 		margin-right: 0;
 		width: 100%;
+		max-width: 450px;
+
 		margin-bottom: 20px;
 	}
 
