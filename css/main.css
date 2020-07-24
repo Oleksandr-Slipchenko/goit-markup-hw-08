@@ -188,7 +188,7 @@ h3 {
 
 @media screen and (min-width: 480px) {
   .nav .item {
-    margin-bottom: 40px;
+    text-align: center;
   }
 }
 
@@ -226,9 +226,10 @@ h3 {
 
 @media screen and (min-width: 480px) {
   .nav .link {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-bottom: 40px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     padding: 0;
   }
 }
@@ -262,7 +263,7 @@ h3 {
 @media screen and (min-width: 480px) {
   .nav .link.active::after {
     top: calc(100% + 8px);
-    width: 61px;
+    width: 100%;
   }
 }
 

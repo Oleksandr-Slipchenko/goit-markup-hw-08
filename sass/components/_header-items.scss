@@ -62,7 +62,7 @@
 }
 .nav .item {
 	@media screen and (min-width: $mobile-upper) {
-		margin-bottom: 40px;
+		text-align: center;
 	}
 	@media screen and (min-width: $tablet-upper) {
 		margin-bottom: 0px;
@@ -93,7 +93,8 @@
 	transition: color 250ms $timing-transition;
 
 	@media screen and (min-width: $mobile-upper) {
-		justify-content: center;
+		margin-bottom: 40px;
+		display: inline-flex;
 		padding: 0;
 	}
 	@media screen and (min-width: $tablet-upper) {
@@ -120,7 +121,7 @@
 		opacity: 1;
 		@media screen and (min-width: $mobile-upper) {
 			top: calc(100% + 8px);
-			width: 61px;
+			width: 100%;
 		}
 		@media screen and (min-width: $tablet-upper) {
 			top: auto;
