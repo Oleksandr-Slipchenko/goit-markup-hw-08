@@ -3,6 +3,9 @@
 	@media screen and (min-width: $mobile-upper) {
 		display: none;
 	}
+	@media screen and (min-width: $desktop-upper) {
+		display: block;
+	}
 }
 .specialization {
 	@extend %list;

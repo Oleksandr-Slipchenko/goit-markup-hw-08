@@ -1,12 +1,16 @@
 /*footer-subscribe */
 
 .subscribe {
-	// width: calc((100% - 30px) / 2);
+	@media screen and (min-width: $desktop-upper) {
+		width: calc((100% - 30px) / 2);
+	}
 
 	&-list {
 		@extend %list;
 		display: inline-block;
-		// display: flex;
+		@media screen and (min-width: $desktop-upper) {
+			display: flex;
+		}
 	}
 	&-title {
 		margin-bottom: 20px;
@@ -22,7 +26,6 @@
 
 .subscribe-input {
 	padding: 15px 16px;
-	margin-right: 12px;
 
 	min-width: 358px;
 
@@ -42,6 +45,10 @@
 		max-width: 450px;
 
 		margin-bottom: 20px;
+	}
+	@media screen and (min-width: $desktop-upper) {
+		margin-right: 12px;
+		max-width: 358px;
 	}
 
 	.label-subscribe:focus-within & {

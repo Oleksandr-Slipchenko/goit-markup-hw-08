@@ -13,4 +13,7 @@
 	@media screen and (min-width: $mobile-upper) {
 		@include font(700, 24px, 1.16, 0.03em);
 	}
+	@media screen and (min-width: $desktop-upper) {
+		@include font(700, 26px, 1.19, 0.03em);
+	}
 }

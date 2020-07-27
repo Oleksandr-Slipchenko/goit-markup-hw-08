@@ -1,14 +1,15 @@
 /*footer-join-in */
 
 .join-in {
-	// width: calc((100% - 60px) / 4);
-
 	@media screen and (min-width: $mobile-upper) {
 		margin-bottom: 60px;
 	}
 	@media screen and (min-width: $tablet-upper) {
 		width: 50%;
 		margin-bottom: 0;
+	}
+	@media screen and (min-width: $desktop-upper) {
+		width: calc((100% - 60px) / 4);
 	}
 
 	& .title {
@@ -25,6 +26,9 @@
 
 		@media screen and (min-width: $mobile-upper) {
 			justify-content: center;
+		}
+		@media screen and (min-width: $desktop-upper) {
+			justify-content: inherit;
 		}
 	}
 }

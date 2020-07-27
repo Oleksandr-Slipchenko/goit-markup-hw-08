@@ -2,8 +2,6 @@
 
 .features {
 	@extend %list;
-	padding-top: 94px;
-	padding-bottom: 94px;
 
 	@media screen and (min-width: $mobile-upper) {
 		padding-top: 60px;
@@ -13,11 +11,12 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+	@media screen and (min-width: $desktop-upper) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 
 	& .item {
-		// margin-right: 30px;
-		// width: calc((100% - 90px) / 4);
-
 		@media screen and (min-width: $mobile-upper) {
 			margin-bottom: 30px;
 
@@ -36,10 +35,19 @@
 				margin-right: 0;
 			}
 		}
+		@media screen and (min-width: $desktop-upper) {
+			width: calc((100% - 90px) / 4);
+			margin-bottom: 0;
+
+			&:nth-child(2n) {
+				margin-right: 30px;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 	}
-	// & .item:last-child {
-	// 	margin-right: 0;
-	// }
+
 	&-title {
 		margin-bottom: 10px;
 

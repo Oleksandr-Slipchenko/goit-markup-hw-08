@@ -38,7 +38,7 @@
 	@media screen and (min-width: $tablet-upper) {
 		position: initial;
 		display: flex;
-		width: auto;
+		width: initial;
 		box-shadow: none;
 		border-top: none;
 		padding: 0;
@@ -53,19 +53,17 @@
 		display: flex;
 	}
 
-	// display: flex;
-	// margin-left: 85px;
-
-	// & .item + .item {
-	// 	margin-left: 50px;
-	// }
 }
 .nav .item {
 	@media screen and (min-width: $mobile-upper) {
 		text-align: center;
 	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
 	@media screen and (min-width: $tablet-upper) {
-		margin-bottom: 0px;
 		margin-left: 50px;
 	}
 	&:first-child {
@@ -73,18 +71,15 @@
 			margin-left: 81px;
 		}
 	}
-	&:last-child {
-		@media screen and (min-width: $mobile-upper) {
-			margin-bottom: 0px;
+	&:first-child {
+		@media screen and (min-width: $desktop-upper) {
+			margin-left: 85px;
 		}
 	}
 }
 
 .nav .link {
 	position: relative;
-
-	padding-top: 32px;
-	padding-bottom: 32px;
 
 	display: flex;
 	color: $primary-text-color;
@@ -93,10 +88,11 @@
 	transition: color 250ms $timing-transition;
 
 	@media screen and (min-width: $mobile-upper) {
-		margin-bottom: 40px;
 		display: inline-flex;
+		margin-bottom: 40px;
 		padding: 0;
 	}
+
 	@media screen and (min-width: $tablet-upper) {
 		padding-top: 32px;
 		padding-bottom: 32px;
@@ -125,7 +121,7 @@
 			width: 100%;
 		}
 		@media screen and (min-width: $tablet-upper) {
-			top: auto;
+			top: initial;
 			width: 100%;
 		}
 	}
@@ -139,6 +135,7 @@
 		}
 	}
 }
+
 .menu-button {
 	display: inline-flex;
 	margin: 0;

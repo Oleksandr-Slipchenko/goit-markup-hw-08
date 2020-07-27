@@ -1,12 +1,13 @@
 /* customers */
 
 .customers {
-	padding-top: 94px;
-	padding-bottom: 94px;
-
 	@media screen and (min-width: $mobile-upper) {
 		padding-top: 60px;
 		padding-bottom: 60px;
+	}
+	@media screen and (min-width: $desktop-upper) {
+		padding-top: 94px;
+		padding-bottom: 94px;
 	}
 
 	&-list {
@@ -23,19 +24,17 @@
 		margin-bottom: 50px;
 		text-align: center;
 
-		@include font(700, 36px, 1.16, 0.03em);
-
 		@media screen and (min-width: $mobile-upper) {
 			@include font(700, 28px, 1.17, 0.03em);
 			margin-bottom: 30px;
+		}
+		@media screen and (min-width: $desktop-upper) {
+			@include font(700, 36px, 1.16, 0.03em);
 		}
 	}
 }
 
 .customers-list .item {
-	// margin-right: 30px;
-	// width: calc((100% - 150px) / 6);
-
 	@media screen and (min-width: $mobile-upper) {
 		width: calc((100% - 30px) / 2);
 		margin-right: 30px;
@@ -60,6 +59,16 @@
 		}
 		&:nth-last-child(-n + 3) {
 			margin-bottom: 0px;
+		}
+	}
+	@media screen and (min-width: $desktop-upper) {
+		width: calc((100% - 150px) / 6);
+		margin-bottom: 0;
+		&:nth-child(3n + 3) {
+			margin-right: 30px;
+		}
+		&:last-child {
+			margin-right: 0;
 		}
 	}
 }

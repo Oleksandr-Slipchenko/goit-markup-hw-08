@@ -13,7 +13,6 @@
 	overflow-y: scroll;
 
 	@media screen and (min-width: $mobile-upper) {
-		// width: 100%;
 		padding: 93px 15px;
 	}
 
@@ -24,17 +23,6 @@
 }
 
 .modal {
-	// для Desktop - уже добвил ниже. Проверь и удали это
-
-	// position: absolute;
-	// top: 50%;
-	// left: 50%;
-	// transform: translate(-50%, -50%);
-
-	// padding: 0;
-	// margin: 0;
-	// max-width: 528px;
-
 	@media screen and (min-width: $mobile-upper) {
 		position: relative;
 	}
