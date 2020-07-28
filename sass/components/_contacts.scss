@@ -28,7 +28,7 @@
 
 	&-icon {
 		fill: currentColor;
-		@media screen and (max-width: 767px) {
+		@media screen and (min-width: $mobile-upper) {
 			margin-right: 10px;
 		}
 		@media screen and (min-width: $tablet-upper) and (max-width: 1199px) {
@@ -43,6 +43,9 @@
 	}
 	&:last-child {
 		@media screen and (max-width: 767px) {
+			margin-bottom: 0px;
+		}
+		@media screen and (min-width: $tablet-upper) {
 			margin-bottom: 0px;
 		}
 	}

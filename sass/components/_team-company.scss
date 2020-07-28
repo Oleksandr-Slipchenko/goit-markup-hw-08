@@ -105,9 +105,9 @@
 	@extend %list;
 	display: flex;
 
-	@media screen and (min-width: $mobile-upper) {
-		justify-content: center;
-	}
+	// @media screen and (min-width: $mobile-upper) {
+	justify-content: center;
+	// }
 }
 .social-list .social-item {
 	margin-right: 10px;

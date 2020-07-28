@@ -14,15 +14,16 @@
 // 	box-sizing: border-box;
 // }
 body {
-	padding-top: 79px;
-
 	background-color: $accent-color;
 	color: $primary-text-color;
 	font-family: $main-font;
 	letter-spacing: $font-letter-spacing;
 
-	@media screen and (max-width: $mobile-upper) {
+	@media screen and (max-width: 767px) {
 		padding-top: 60px;
+	}
+	@media screen and (min-width: $tablet-upper) {
+		padding-top: 79px;
 	}
 	&.modal-open {
 		overflow: hidden;

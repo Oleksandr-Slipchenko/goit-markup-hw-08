@@ -6,7 +6,7 @@
 
 	@include font(500, 14px, 1.14, 0.02em);
 
-	@media screen and (min-width: $mobile-upper) {
+	@media screen and (max-width: 767px) {
 		padding: 10px 0px;
 		justify-content: space-between;
 		@include font(500, 18px, 1.16, 0.02em);
@@ -17,7 +17,7 @@
 	}
 }
 .nav-contacts {
-	@media screen and (min-width: $mobile-upper) {
+	@media screen and (max-width: 767px) {
 		display: none;
 		position: absolute;
 		top: 100%;
@@ -54,7 +54,7 @@
 	}
 }
 .nav .item {
-	@media screen and (min-width: $mobile-upper) {
+	@media screen and (max-width: 767px) {
 		text-align: center;
 	}
 
@@ -86,7 +86,7 @@
 
 	transition: color 250ms $timing-transition;
 
-	@media screen and (min-width: $mobile-upper) {
+	@media screen and (max-width: 767px) {
 		display: inline-flex;
 		margin-bottom: 40px;
 		padding: 0;
@@ -115,7 +115,7 @@
 	}
 	&.active::after {
 		opacity: 1;
-		@media screen and (min-width: $mobile-upper) {
+		@media screen and (max-width: 767px) {
 			top: calc(100% + 8px);
 		}
 		@media screen and (min-width: $tablet-upper) {
@@ -124,7 +124,7 @@
 	}
 	&.active {
 		color: $text-color-hover;
-		@media screen and (min-width: $mobile-upper) {
+		@media screen and (max-width: 767px) {
 			margin-bottom: 48px;
 		}
 		@media screen and (min-width: $tablet-upper) {

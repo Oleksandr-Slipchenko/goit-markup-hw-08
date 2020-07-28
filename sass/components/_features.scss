@@ -15,7 +15,7 @@
 	}
 
 	& .item {
-		@media screen and (max-width: 767px) {
+		@media screen and (min-width: $mobile-upper) {
 			margin-bottom: 30px;
 
 			&:last-child {

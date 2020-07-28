@@ -42,11 +42,11 @@
 	& .label-policy {
 		color: $additional-color;
 
-		// @media screen and (max-width: 767px) {
+		@media screen and (min-width: $mobile-upper) {
 		font-size: 12px;
 		line-height: 1.16;
 		letter-spacing: 0.03em;
-		// }
+		}
 		@media screen and (min-width: $desktop-upper) {
 			font-size: 14px;
 			line-height: 1.71;
