@@ -1,10 +1,8 @@
 /* customers */
 
 .customers {
-	@media screen and (min-width: $mobile-upper) {
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
+	padding-top: 60px;
+	padding-bottom: 60px;
 	@media screen and (min-width: $desktop-upper) {
 		padding-top: 94px;
 		padding-bottom: 94px;

@@ -3,10 +3,8 @@
 .features {
 	@extend %list;
 
-	@media screen and (min-width: $mobile-upper) {
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
+	padding-top: 60px;
+	padding-bottom: 60px;
 	@media screen and (min-width: $tablet-upper) {
 		display: flex;
 		flex-wrap: wrap;
@@ -17,7 +15,7 @@
 	}
 
 	& .item {
-		@media screen and (min-width: $mobile-upper) {
+		@media screen and (max-width: 767px) {
 			margin-bottom: 30px;
 
 			&:last-child {
@@ -54,7 +52,7 @@
 		@include font($fw: 700, $lh: 1.14);
 		text-transform: uppercase;
 
-		@media screen and (min-width: $mobile-upper) {
+		@media screen and (max-width: 767px) {
 			text-align: center;
 		}
 		@media screen and (min-width: $tablet-upper) {

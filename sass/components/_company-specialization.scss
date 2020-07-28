@@ -1,6 +1,6 @@
 /* company specialization */
 .section-specialization {
-	@media screen and (min-width: $mobile-upper) {
+	@media screen and (max-width: 767px) {
 		display: none;
 	}
 	@media screen and (min-width: $desktop-upper) {

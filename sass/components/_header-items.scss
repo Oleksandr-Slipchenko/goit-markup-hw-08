@@ -52,7 +52,6 @@
 	@media screen and (min-width: $tablet-upper) {
 		display: flex;
 	}
-
 }
 .nav .item {
 	@media screen and (min-width: $mobile-upper) {
@@ -118,11 +117,9 @@
 		opacity: 1;
 		@media screen and (min-width: $mobile-upper) {
 			top: calc(100% + 8px);
-			width: 100%;
 		}
 		@media screen and (min-width: $tablet-upper) {
 			top: initial;
-			width: 100%;
 		}
 	}
 	&.active {

@@ -1,13 +1,12 @@
 /* footer-tools */
 
 .footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	text-align: center;
 	background-color: #2f303a;
 
-	@media screen and (min-width: $mobile-upper) {
-		padding-top: 60px;
-		padding-bottom: 60px;
-		text-align: center;
-	}
 	@media screen and (min-width: $desktop-upper) {
 		text-align: inherit;
 	}
