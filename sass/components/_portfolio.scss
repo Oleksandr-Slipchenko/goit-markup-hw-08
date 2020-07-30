@@ -1,7 +1,7 @@
 /* Portfolio */
 
 .portfolio-list {
-	@media screen and (min-width: $mobile-upper) {
+	@media screen and (max-width: 1199px) {
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
@@ -14,7 +14,7 @@
 .filter {
 	@extend %list;
 
-	@media screen and (min-width: $mobile-upper) {
+	@media screen and (max-width: 767px) {
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: 40px;
@@ -74,14 +74,12 @@
 
 .card {
 	@extend %list;
-	@media screen and (min-width: $tablet-upper) {
-		display: flex;
-		flex-wrap: wrap;
-	}
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 
 	& img {
 		@extend %image;
-		// width: 100%;
 	}
 
 	&-content {
@@ -115,6 +113,8 @@
 .card .item {
 	@media screen and (min-width: $mobile-upper) {
 		margin-bottom: 30px;
+		max-width: 354px;
+		width: 100%;
 	}
 	&:last-child {
 		@media screen and (min-width: $mobile-upper) {

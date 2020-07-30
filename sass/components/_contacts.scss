@@ -3,9 +3,6 @@
 .contacts {
 	@extend %list;
 
-	@media screen and (max-width: 767px) {
-		margin-top: 20px;
-	}
 	@media screen and (min-width: $tablet-upper) {
 		margin-top: 0;
 		margin-left: 84px;
