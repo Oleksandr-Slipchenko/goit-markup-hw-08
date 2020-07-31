@@ -1,15 +1,11 @@
 /* header */
-
 .page-header {
 	position: fixed;
 	top: 0;
 	left: 0;
-
 	width: 100%;
-
 	background: $accent-color;
 	z-index: 1;
-
 	&.border-header {
 		border-bottom: 1px solid #ececec;
 	}

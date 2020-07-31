@@ -1,5 +1,4 @@
 /* Portfolio */
-
 .portfolio-list {
 	@media screen and (max-width: 1199px) {
 		padding-top: 60px;
@@ -10,15 +9,12 @@
 		padding-bottom: 94px;
 	}
 }
-
 .filter {
 	@extend %list;
-
 	@media screen and (max-width: 767px) {
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: 40px;
-
 		& .item:not(:nth-last-child(-2n + 3)) {
 			margin-right: 8px;
 		}
@@ -28,11 +24,9 @@
 		margin-bottom: 30px;
 		justify-content: center;
 	}
-
 	& .item:not(:last-child) {
 		margin-right: 8px;
 	}
-
 	@media screen and (min-width: $mobile-upper) {
 		& .item {
 			margin-bottom: 15px;
@@ -50,10 +44,8 @@
 		margin-bottom: 50px;
 	}
 }
-
 .button-filter {
 	padding: 6px 22px;
-
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
@@ -61,9 +53,7 @@
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-
 	transition: color 250ms $timing-transition, background 250ms $timing-transition, box-shadow 250ms $timing-transition;
-
 	&:hover,
 	&:focus {
 		background-color: $text-color-hover;
@@ -71,20 +61,16 @@
 		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 	}
 }
-
 .card {
 	@extend %list;
 	display: flex;
 	flex-wrap: wrap;
 	// justify-content: center;
-
 	& img {
 		@extend %image;
 	}
-
 	&-content {
 		padding: 20px 24px;
-
 		background: $accent-color;
 		border: 1px solid #eeeeee;
 		border-top: none;
@@ -92,12 +78,10 @@
 	}
 	&-heading {
 		margin-bottom: 4px;
-
 		font-weight: 700;
 		font-size: 18px;
 		line-height: 2;
 		letter-spacing: 0.06em;
-
 		white-space: nowrap; /* Запрещаем перенос строк */
 		overflow: hidden; /* Обрезаем все, что не помещается в область */
 		text-overflow: ellipsis; /* Добавляем многоточие */
@@ -105,7 +89,6 @@
 	&-caption {
 		margin-top: 0px;
 		font-size: 16px;
-
 		line-height: 1.87;
 		color: $additional-color;
 	}
@@ -124,7 +107,6 @@
 		width: calc((100% - 30px) / 2);
 		margin-right: 30px;
 		margin-bottom: 30px;
-
 		&:nth-child(2n) {
 			margin-right: 0;
 		}
@@ -132,14 +114,11 @@
 			margin-right: 0;
 		}
 	}
-
 	@media screen and (min-width: $desktop-upper) {
 		width: calc((100% - 60px) / 3);
-
 		&:nth-child(2n) {
 			margin-right: 30px;
 		}
-
 		&:nth-child(3n) {
 			margin-right: 0px;
 		}
@@ -148,26 +127,20 @@
 		}
 	}
 }
-
 .card .link {
 	width: 100%;
 	height: 100%;
-
 	display: block;
 	text-decoration: none;
 	color: $primary-text-color;
-
 	transition: box-shadow 250ms $timing-transition;
-
 	&:hover,
 	&:focus {
 		box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 	}
 }
-
 .overlay {
 	position: relative;
-
 	overflow: hidden;
 }
 .card-overlay {
@@ -175,18 +148,15 @@
 	top: 0;
 	left: 0;
 	transform: translateY(100%);
-
 	padding: 63px 24px;
 	width: 100%;
 	height: 100%;
-
 	font-size: 18px;
 	line-height: 1.55;
 	color: $accent-color;
 	background: rgba(33, 150, 243, 0.9);
 	opacity: 0;
 	transition: transform 250ms $timing-transition;
-
 	.card .link:hover &,
 	.card .link:focus & {
 		opacity: 1;

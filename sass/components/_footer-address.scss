@@ -1,9 +1,7 @@
 /* address */
-
 .address {
 	padding-top: 60px;
 	padding-bottom: 60px;
-
 	@media screen and (max-width: 767px) {
 		padding-top: 0px;
 	}
@@ -14,13 +12,10 @@
 	@media screen and (min-width: $desktop-upper) {
 		width: calc((100% - 60px) / 4);
 	}
-
 	&-map {
 		display: flex;
 		margin-top: 20px;
-
 		@include font();
-
 		color: $accent-color;
 		font-style: normal;
 		flex-direction: column;
@@ -29,28 +24,23 @@
 .address-map-list {
 	@extend %list;
 }
-
 .address-map .item {
 	@media screen and (max-width: 767px) {
 		margin-bottom: 8px;
 	}
-
 	&:last-child {
 		margin-bottom: 0;
 	}
 	@media screen and (min-width: $desktop-upper) {
 		margin-bottom: 9px;
 	}
-
 	&:last-child {
 		margin-bottom: 0;
 	}
 }
-
 .address-map .link {
 	color: rgba(255, 255, 255, 0.6);
 	text-decoration: none;
-
 	&:hover,
 	&:focus {
 		color: $text-color-hover;

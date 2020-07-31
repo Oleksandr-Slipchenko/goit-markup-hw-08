@@ -2,13 +2,11 @@
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 0px;
-
 	list-style: none;
 }
 %image {
 	max-width: 100%;
 	height: auto;
-
 	display: block;
 }
 %logoweb {
@@ -16,6 +14,5 @@
 	color: #000000;
 	text-decoration: none;
 	font-family: Raleway, sans-serif;
-
 	@include font(700, 26px, 1.19, 0.03em);
 }
