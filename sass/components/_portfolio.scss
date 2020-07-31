@@ -76,7 +76,7 @@
 	@extend %list;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	// justify-content: center;
 
 	& img {
 		@extend %image;
@@ -111,13 +111,12 @@
 	}
 }
 .card .item {
-	@media screen and (min-width: $mobile-upper) {
+	@media screen and (max-width: 767px) {
 		margin-bottom: 30px;
-		max-width: 354px;
 		width: 100%;
 	}
 	&:last-child {
-		@media screen and (min-width: $mobile-upper) {
+		@media screen and (max-width: 767px) {
 			margin-bottom: 0px;
 		}
 	}
@@ -133,6 +132,7 @@
 			margin-right: 0;
 		}
 	}
+
 	@media screen and (min-width: $desktop-upper) {
 		width: calc((100% - 60px) / 3);
 

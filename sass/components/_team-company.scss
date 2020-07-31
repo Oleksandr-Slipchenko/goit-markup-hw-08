@@ -56,10 +56,6 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
-
-	@media screen and (min-width: 481px) {
-		max-width: 354px;
-	}
 	@media screen and (min-width: $tablet-upper) {
 		width: calc((100% - 30px) / 2);
 		margin-right: 30px;
@@ -70,9 +66,6 @@
 		&:nth-last-child(-n + 2) {
 			margin-bottom: 0;
 		}
-	}
-	@media screen and (min-width: $tablet-upper + 1px) {
-		max-width: 270px;
 	}
 	@media screen and (min-width: $desktop-upper) {
 		width: calc((100% - 90px) / 4);
