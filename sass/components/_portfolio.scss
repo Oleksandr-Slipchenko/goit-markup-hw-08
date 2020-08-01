@@ -19,6 +19,14 @@
 			margin-right: 8px;
 		}
 	}
+	@media screen and (max-width: 767px) {
+		& .item {
+			margin-bottom: 15px;
+		}
+		& .item:nth-last-child(-n + 2) {
+			margin-bottom: 0;
+		}
+	}
 	@media screen and (min-width: $tablet-upper) {
 		display: flex;
 		margin-bottom: 30px;
@@ -26,14 +34,6 @@
 	}
 	& .item:not(:last-child) {
 		margin-right: 8px;
-	}
-	@media screen and (min-width: $mobile-upper) {
-		& .item {
-			margin-bottom: 15px;
-		}
-		& .item:nth-last-child(-n + 2) {
-			margin-bottom: 0;
-		}
 	}
 	@media screen and (min-width: $tablet-upper) {
 		& .item {
